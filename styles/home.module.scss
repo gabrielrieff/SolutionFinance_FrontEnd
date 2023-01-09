@@ -1,0 +1,26 @@
+.containerCenter{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+}
+
+.link{
+    color: var(--grey-700);
+    margin-top: 15px;
+    transition: .3s all;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--black);
+    }
+}

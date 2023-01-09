@@ -1,0 +1,18 @@
+.Container{
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    max-height: 50px;
+    background-color: var(--grey-700);
+    border-radius: 5px;
+    left: 10%;
+
+    span{
+        padding: 5px 10px;
+        display: flex;
+        color: var(--white);
+        justify-content: center;
+        align-items: center;
+    
+    }
+}

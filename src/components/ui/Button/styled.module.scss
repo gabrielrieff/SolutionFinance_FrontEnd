@@ -1,0 +1,40 @@
+.button{
+    max-width: 147px;
+    height: 42px;
+    padding: 5px 40px;
+    background-color: var(--green-500);
+    border-radius: 5px;
+    border: 0;
+    transition: 0.3s all;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &[disabled]{
+        padding: 5px 15px;
+        cursor: not-allowed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            animation: animate 2s infinite;
+        }
+    }
+
+    &:hover{
+        background-color: var(--green-600);
+        box-shadow: 0 0 4px var(--black) ;
+
+    }
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}

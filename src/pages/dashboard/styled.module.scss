@@ -1,0 +1,60 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+        color: var(--green-500);
+    }
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+        color: var(--black);
+        max-width: 600px;
+    }
+}
+
+.logout{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    color: var(--grey-700) !important;
+    transition: .3s all;
+    &:hover{
+            color: var(--grey-900)!important;
+    }
+
+}
+
+.inovoice{
+
+    &:hover{
+        animation-name: reverse;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+@keyframes reverse{
+    to{
+            transform: rotateY(180deg);
+    }
+}

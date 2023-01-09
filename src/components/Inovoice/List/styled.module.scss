@@ -1,0 +1,93 @@
+.Content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: 600px){
+        svg{
+            font-size: 20px !important;
+        }
+    }
+}
+
+.THead{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+    color: var(--grey-700);
+    margin-top: 29px;
+
+    tr{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+
+        th{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.TBody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+
+    tr{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        border-radius: 2px;
+        background-color: var(--white);
+        box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+
+        &:not(:nth-child(1)){
+            margin-top: 10px;
+        }
+
+        td{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.iconEdit, .iconDelet{
+        font-size: 24px;
+        color: var(--grey-700);
+        transition: .5s;
+        cursor: pointer;
+}
+
+.iconEdit{
+    &:hover{
+        color: var(--blue-500);
+    }
+}
+
+.iconDelet{
+    &:hover{
+        color: var(--red);
+    }
+}
+
+.iconType{
+    font-size: 32px;
+}
